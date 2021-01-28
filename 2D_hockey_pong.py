@@ -8,7 +8,7 @@ def puck_animation():
     puck.x += puck_speed_x
     puck.y += puck_speed_y
 
-    # Ball Collision
+    # Puck Collision
     if puck.top <= 0 or puck.bottom >= WINDOW_HEIGHT:
         puck_speed_y *= -1
     if puck.left <= 0 or puck.right >= WINDOW_WIDTH:
