@@ -108,17 +108,13 @@ class Puck(games.Sprite):
     def bounce(self):
         if self.dx == -7:
             self.dx = random.choice((-7,7))
-            self.angle -= 1
         elif self.dx == 7:
             self.dx = random.choice((-7,7))
-            self.angle += 1
 
         if self.dy == 7:
             self.dy = random.choice((-7,7))
-            self.angle += 1
         elif self.dy == -7:
             self.dy = random.choice((-7,7))
-            self.angle -= 1
 
     def score(self):
         self.x = games.screen.width/2
