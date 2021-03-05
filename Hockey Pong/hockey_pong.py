@@ -101,6 +101,8 @@ class Puck(games.Sprite):
 
 
         for puck in self.overlapping_sprites:
+            self.x = self.x
+            self.y = self.y
             self.bounce()
             Puck.stick_sound.play()
 
